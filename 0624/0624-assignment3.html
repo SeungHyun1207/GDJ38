@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form action="#">
+        <ul>
+            <li><label for="name">이름 :  <input type="text" name="uname" id="uname" placeholder="이름을 한글로 입력해주세요!"></label></li>
+            <li><label for="id">ID : <input type="text" name="id" id="id"></label></li>
+            <li><label for="pw">pw : <input type="password" name="pw" id="pw"></label></li>
+            <li><label for="cfpw">pw확인 : <input type="password" name="cfpw" id="cfpw"></label></li>
+            <li><label for="email">이메일 : <input type="email" name="email" id="email" placeholder="이메일 형식에 맞게 입력해주세요!"></label></li>
+            <li><label> 성별 : <input type="checkbox">남자<input type="checkbox">여자<input type="checkbox">그외</label></li>
+            <li><label for="phone">전화번호 : <input type="tel" name="number" id="number" placeholder="전화번호 형식에 맞게 입력해주세요!"></label></li>
+            <li><label>홈페이지 : <input type="adress" placeholder="www.주소.com"></label></li>
+            <li><label for="">생일 : <input type="datetime-local"></label></li>
+            <li><label for="">좋아하는 색깔<input type="color"></label></li>
+            <li><label for="">관심 분야<br><input type="checkbox">경제<input type="checkbox">IT<input type="checkbox">사회<input type="checkbox">과학<input type="checkbox">음악<input type="checkbox">미술</label></li>
+        </ul>
+        <button type="submit">확인</button>
+        <button type="reset">취소</button>
+    </form>
+    <!-- 패스워드입력과 패스워드 입력 확인 둘이 동일한지 -->
+    <script>
+        document.getElementsById("cfpw").addEventListener("blur",function(){
+            var a = document.getElementById("pw").value;
+            var b = this.value;
+            if(a==b){
+                alert("같습니다.");
+            }else{
+                alert("다릅니다.");
+            }
+        },false);
+    </script>
+</body>
+</html>

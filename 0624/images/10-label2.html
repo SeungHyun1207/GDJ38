@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <label>체크<input type="checkbox" name="box" id="box"></label>
+    <script>
+        var box = document.getElementsById("box");
+
+        box.addEventListener("change", function(){
+            if(box.checked){
+                document.getElementsByTagName("box");
+            }
+        }, false)
+    </script>
+</body>
+</html>

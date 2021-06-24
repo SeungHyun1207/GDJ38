@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <ul>
+            <li>
+                <label class="reg" for="uname">이름</label>
+                <input type="text" id="uname" pattern="[가-힣]{3}" title="이름은 반드시 한글 3글자 이상으로 입력하세요." autofocus>
+            </li>
+            <li>
+                <label class="reg" for="uid">학번</label>
+                <input type="text" id="uid" pattern="\d{10}" placeholder="하이폰없이 입력" title="학번은 모두 10자리 숫자로 입력하세요" maxlength="10">
+            </li>
+            <li>
+                <label class="reg" for="umail">email</label>
+                <input type="text" id="umail" title="메일 형식에 맞게 입력해주세요." required>
+            </li>
+            <li>
+                <label class="reg" for="addr">주소</label>
+                <input type="address" id="addr" pattern="[가-힣]+" title="주소 형식에 맞게 입력해주세요." required>
+            </li>
+            <li>
+                <label class="reg" for="phone">전화번호</label>
+                <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" title="전화번호 형식에 맞게 입력해주세요." required>
+            </li>
+            <hr>
+        </ul>
+        <button type="submit">신청하기</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid blue;
+        }
+        p{
+            font-size: 32px;
+        }
+        /* 우선순위 - 인라인 -> id -> class -> tag */
+        /* !important 우선순위 변경 */
+        #jj{
+            background-color: blueviolet !important;
+        }
+        .tang{
+            font-weight: bold;
+            background-color: green;
+        }
+        #jj, .tang{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>중식</h1>
+    <p id="jj">짜장면</p>
+    <p>짬뽕</p>
+    <p class="tang">탕수육</p>
+    <p>팔보채</p>
+    <p>볶음밥</p>
+</body>
+</html>

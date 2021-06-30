@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a태그만 한다면 메인메뉴까지 색상이 들어가지만
+            [href]태그까지 넣어준다면 href태그만 색상이 들어간다. */
+        a[href]{
+            background-color: yellow;
+        }
+        /* href에서 이름을 abc로 넣어준다면 abc만 색상이 들어간다. */
+        a[href="abc"]{
+            background-color: lightblue;
+        }
+        /* 클래스가 일치하지 않아도 aaa bbb 처럼 되어있다면 style에
+            class~="aaa"라고 적어주면 된다. */
+        a[class~="aaa"]{
+            background-color: lightblue;
+        }
+        a[class^="x"]{
+            background-color: lightblue;
+        }
+        a[class|="xx"]{
+            background-color: lightblue;
+        }
+        ul li:nth-child(2){
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인메뉴</a></li>
+        <li><a href="abc">메뉴 1</a></li>
+        <li><a href="" class="aaa bbb">메뉴 2</a></li>
+        <li><a href="" class="xx yy">메뉴 3</a></li>
+        <li><a href="" class="xx">메뉴 4</a></li>
+    </ul>
+</body>
+</html>

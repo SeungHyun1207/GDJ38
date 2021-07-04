@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/0702/default.css">
+    <style>
+        /* 모바일버전 */
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .flex-item{
+            flex: 1 auto;
+        }
+        @media (min-width:600px){
+            .flex-container{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .flex-item{
+                /* 이 방법은 써도 된다. */
+                width: 50%;
+
+                /* 이 방법은 절대 쓰지말것 */
+                /* flex-basis: 50%; */
+            }
+        }
+        @media(min-width: 900px){
+            .flex-item{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBB</div>
+        <div class="flex-item">AAAAAAAAAA</div>
+        <div class="flex-item">badsfbb</div>
+        <div class="flex-item">CsadfCC</div>
+        <div class="flex-item">CCasfdasfasdfasdfCC</div>
+        <div class="flex-item">CcfasdfsafCC</div>
+        <div class="flex-item">fsafdadfsaCCC</div>
+        <div class="flex-item">CCasdfasdC</div>
+        <div class="flex-item">affasdfsaf</div>
+        <div class="flex-item">CCadfasC</div>
+        <div class="flex-item">CCfasfsafdasC</div>
+        <div class="flex-item">CCasdfasdfC</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/0702/default.css">
+    <style>
+        .flex-container{
+            display: flex;
+        }
+        .flex-item:nth-child(1){
+            flex-shrink: 0;
+            width: 150px;
+        }
+        .flex-item:nth-child(2){
+            flex-grow: 1;
+        }
+        .flex-item:nth-child(3){
+            flex-shrink: 0;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis, quas magnam sed consequatur autem quos, voluptates laboriosam sint, laborum animi nobis? Qui earum enim, ea natus recusandae nam tempora?
+        </div>
+        <div class="flex-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita quaerat minus amet assumenda? Ea alias aperiam perspiciatis accusantium aliquam provident, sed ipsum tenetur pariatur impedit, aut distinctio, sequi praesentium.
+        </div>
+        <div class="flex-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vel obcaecati ducimus ut quas similique voluptas animi ipsam quam ab porro quo repellendus adipisci deserunt facere, illum eveniet. Id, perspiciatis.
+        </div>
+    </div>
+</body>
+</html>

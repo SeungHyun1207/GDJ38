@@ -1,42 +1,59 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+*{
+    margin: 0;
+    padding: 0;
 }
-.box1{
-    background-color: lightgreen;
+#wrapper{
+    width: 320px;
+    margin: 0 auto;
 }
-.box2{
-    background-color: lightblue;
+h1{
+    text-align: center;
+    margin-bottom: 10px;
 }
-.box3{
-    background-color: aqua;
+#img-box{
+    width: 100%;
 }
-.box4{
-    background-color: lightpink;
+.box{
+    width: 320px;
+    height: 180px;
+    border: 1px solid black;
+    margin-bottom: 10px;
 }
-.box1, .box2, .box3, .box4{
-    flex: 1 auto;
+.img1{
+    background-color: #ff6a00;
 }
-@media (max-width:1024px){
-    .container{
-        display: flex;
-        flex-direction: column;
+.img2{
+    background-color: #0094ff;
+}
+.img3{
+    background-color: #ff004e;
+}
+.img4{
+    background-color: #4cff00;
+}
+
+@media (min-width : 600px){
+    #wrapper{
+        width: 600px;
     }
-    .box1, .box2, .box3, .box4{
-        width: 25%;
-        margin: 10px 10px 0 0;
+    #img-box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .box{
+        width: 47%;
+        margin: 0.5%;
     }
 }
 
-/* 태블릿 */
-@media (max-width:900px){
-    .container{
-        flex-direction: row;
-        flex-wrap: wrap;
+@media (min-width : 1024px){
+    #wrapper{
+        width: 1024px;
     }
-    .box1, .box2, .box3, .box4{
-        width: 33.3333%;
-        margin: 10px 10px 0 0;
+    .box{
+        width: 22%;
+        margin: 0.5%;
     }
 }

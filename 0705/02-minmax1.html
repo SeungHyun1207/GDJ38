@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/GDJ38-main/0705/default.css">
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* minmax는 첫번째 상자, 두번째 상자, 세번째 상자의 50px(최소값)에서 200px(최대값)까지만 넓혀진다는 의미이다.
+            > 더이상 줄어들지도 늘어나지도 않음 */
+            grid-template-columns: minmax(100px, 300px) minmax(100px,300px) minmax(50px,200px);
+            /* grid-template-rows: repeat(3, 1fr); */
+            /* minmax는 첫번째 상자, 두번째 상자, 세번째 상자의 50px에서 200px까지만 넓혀진다는 의미이다.
+            > 더이상 줄어들지도 늘어나지도 않음 */
+            grid-template-rows: minmax(50px, 200px) minmax(50px,200px) minmax(50px,200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto nostrum rem saepe dolor numquam explicabo natus earum excepturi, sapiente eos ratione ea atque reiciendis! Est dolorem earum in architecto illo.</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam provident cumque aliquid blanditiis laboriosam nobis neque dolor libero unde consectetur officiis nisi pariatur dolore, iure magni praesentium! Eveniet, odit ipsum.</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+    </div>
+</body>
+</html>

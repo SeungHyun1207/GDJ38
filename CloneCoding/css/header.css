@@ -1,8 +1,77 @@
-.inner{
-    display: flex;
+/* header */
+#header-nav{
+    position: relative;
     width: 100%;
-    height: 30px;
+    height: 35px;
     background-image: url(/CloneCoding/images/topnav_bg.gif);
 }
-.inner li a{;
+.inner li{
+    display: grid;
+    grid-template-columns: 1fr;
+    float: right;
+    border: 1px solid black;
 }
+.inner li a{
+    display: block;
+    line-height: 35px;
+    /* 링크효과 제거 */
+    text-decoration: none;
+}
+/* 색깔 고정*/
+.inner a:link, a:visited {
+    color : #fff
+}
+/* -------------------------------------------------- */
+.menu{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(43,21,17,0.85);
+    border: 1px solid black;
+    /* header-nav를 감싸기위함? */
+    z-index: -1;
+}
+/* 로고 고정 */
+.menu h1{
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 46%;
+}
+.leftnav{
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    border: 1px solid black;
+}
+.leftnav a:link, a:visited{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.rightnav{
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    border: 1px solid black;
+}
+.rightnav a:link, a:visited{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* --------------------------------------------------------------- */
+/* header */
+/* container */
